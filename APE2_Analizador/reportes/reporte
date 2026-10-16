@@ -1,0 +1,3351 @@
+================ ANALIZADOR DE TRAFICO TCP/IP - REPORTE ================
+Generado .............: 2026-10-16 17:06:22
+Archivo analizado ....: APE2_Analizador/recursos/paquetes.txt
+Lineas leidas ........: 174
+Paquetes validos .....: 160
+Lineas vacias ........: 14
+Lineas con error .....: 0
+
+================ PAQUETE #1 (linea 1) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:01
+   MAC destino ........: FF:EE:DD:CC:BB:01
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.10
+   IP destino .........: 93.184.216.34
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 51514
+   Puerto destino .....: 80 (HTTP)
+   Secuencia ..........: 1001
+   ACK ................: 2001
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] HTTP
+   Protocolo ..........: HTTP
+   Datos ..............: GET_/index.html
+
+================ PAQUETE #2 (linea 2) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:02
+   MAC destino ........: FF:EE:DD:CC:BB:02
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.10
+   IP destino .........: 93.184.216.34
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 51515
+   Puerto destino .....: 80 (HTTP)
+   Secuencia ..........: 1002
+   ACK ................: 2002
+   Flags ..............: ACK
+[CAPA DE APLICACION] HTTP
+   Protocolo ..........: HTTP
+   Datos ..............: GET_/images/logo.png
+
+================ PAQUETE #3 (linea 3) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:03
+   MAC destino ........: FF:EE:DD:CC:BB:03
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.11
+   IP destino .........: 142.250.184.14
+   TTL ................: 63
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 51516
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 1010
+   ACK ................: 2010
+   Flags ..............: SYN
+[CAPA DE APLICACION] TLS
+   Protocolo ..........: TLS
+   Datos ..............: CLIENT_HELLO
+
+================ PAQUETE #4 (linea 4) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:04
+   MAC destino ........: FF:EE:DD:CC:BB:04
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.11
+   IP destino .........: 142.250.184.14
+   TTL ................: 63
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 51516
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 1011
+   ACK ................: 2011
+   Flags ..............: ACK
+[CAPA DE APLICACION] HTTPS
+   Protocolo ..........: HTTPS
+   Datos ..............: GET_/search?q=redes
+
+================ PAQUETE #5 (linea 5) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:05
+   MAC destino ........: FF:EE:DD:CC:BB:05
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.12
+   IP destino .........: 8.8.8.8
+   TTL ................: 128
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53000
+   Puerto destino .....: 53 (DNS)
+   Longitud ...........: 36 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: QUERY_openai.com
+
+================ PAQUETE #6 (linea 6) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:06
+   MAC destino ........: FF:EE:DD:CC:BB:06
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 8.8.8.8
+   IP destino .........: 192.168.1.12
+   TTL ................: 117
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53 (DNS)
+   Puerto destino .....: 53000
+   Longitud ...........: 52 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: RESPONSE_openai.com_104.18.33.45
+
+================ PAQUETE #7 (linea 7) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:07
+   MAC destino ........: FF:EE:DD:CC:BB:07
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.13
+   IP destino .........: 192.168.1.1
+   TTL ................: 255
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 68 (DHCP)
+   Puerto destino .....: 67 (DHCP)
+   Longitud ...........: 48 bytes
+[CAPA DE APLICACION] DHCP
+   Protocolo ..........: DHCP
+   Datos ..............: DISCOVER
+
+================ PAQUETE #8 (linea 8) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:08
+   MAC destino ........: FF:EE:DD:CC:BB:08
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.1
+   IP destino .........: 192.168.1.13
+   TTL ................: 255
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 67 (DHCP)
+   Puerto destino .....: 68 (DHCP)
+   Longitud ...........: 52 bytes
+[CAPA DE APLICACION] DHCP
+   Protocolo ..........: DHCP
+   Datos ..............: OFFER_192.168.1.120
+
+================ PAQUETE #9 (linea 9) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:09
+   MAC destino ........: FF:EE:DD:CC:BB:09
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.14
+   IP destino .........: 1.1.1.1
+   TTL ................: 64
+   Protocolo ..........: ICMP
+[CAPA DE INTERNET] ICMP (mensaje de control encapsulado en IP; ocupa la posicion de transporte)
+   Tipo de protocolo ..: ICMP
+   Tipo ICMP ..........: 8 (Echo Request)
+   Codigo .............: 0
+   Identificador ......: 1200
+   Secuencia ..........: 1
+   Puertos ............: no aplica (ICMP no usa puertos)
+[CAPA DE APLICACION] PING
+   Protocolo ..........: PING
+   Datos ..............: ECHO_REQUEST
+
+================ PAQUETE #10 (linea 10) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:0A
+   MAC destino ........: FF:EE:DD:CC:BB:0A
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 1.1.1.1
+   IP destino .........: 192.168.1.14
+   TTL ................: 56
+   Protocolo ..........: ICMP
+[CAPA DE INTERNET] ICMP (mensaje de control encapsulado en IP; ocupa la posicion de transporte)
+   Tipo de protocolo ..: ICMP
+   Tipo ICMP ..........: 0 (Echo Reply)
+   Codigo .............: 0
+   Identificador ......: 1200
+   Secuencia ..........: 1
+   Puertos ............: no aplica (ICMP no usa puertos)
+[CAPA DE APLICACION] PING
+   Protocolo ..........: PING
+   Datos ..............: ECHO_REPLY
+
+================ PAQUETE #11 (linea 12) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:0B
+   MAC destino ........: FF:EE:DD:CC:BB:0B
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.15
+   IP destino .........: 172.217.172.14
+   TTL ................: 62
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 51520
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 1100
+   ACK ................: 2100
+   Flags ..............: SYN
+[CAPA DE APLICACION] TLS
+   Protocolo ..........: TLS
+   Datos ..............: CLIENT_HELLO
+
+================ PAQUETE #12 (linea 13) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:0C
+   MAC destino ........: FF:EE:DD:CC:BB:0C
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.15
+   IP destino .........: 172.217.172.14
+   TTL ................: 62
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 51520
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 1101
+   ACK ................: 2101
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] HTTPS
+   Protocolo ..........: HTTPS
+   Datos ..............: GET_/mail
+
+================ PAQUETE #13 (linea 14) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:0D
+   MAC destino ........: FF:EE:DD:CC:BB:0D
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.16
+   IP destino .........: 8.8.4.4
+   TTL ................: 120
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53001
+   Puerto destino .....: 53 (DNS)
+   Longitud ...........: 34 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: QUERY_example.com
+
+================ PAQUETE #14 (linea 15) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:0E
+   MAC destino ........: FF:EE:DD:CC:BB:0E
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 8.8.4.4
+   IP destino .........: 192.168.1.16
+   TTL ................: 115
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53 (DNS)
+   Puerto destino .....: 53001
+   Longitud ...........: 50 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: RESPONSE_example.com_93.184.216.34
+
+================ PAQUETE #15 (linea 16) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:0F
+   MAC destino ........: FF:EE:DD:CC:BB:0F
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.17
+   IP destino .........: 129.6.15.28
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 54000
+   Puerto destino .....: 123 (NTP)
+   Longitud ...........: 32 bytes
+[CAPA DE APLICACION] NTP
+   Protocolo ..........: NTP
+   Datos ..............: TIME_REQUEST
+
+================ PAQUETE #16 (linea 17) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:10
+   MAC destino ........: FF:EE:DD:CC:BB:10
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 129.6.15.28
+   IP destino .........: 192.168.1.17
+   TTL ................: 48
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 123 (NTP)
+   Puerto destino .....: 54000
+   Longitud ...........: 48 bytes
+[CAPA DE APLICACION] NTP
+   Protocolo ..........: NTP
+   Datos ..............: TIME_RESPONSE_2026-04-07T20:15:00
+
+================ PAQUETE #17 (linea 18) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:11
+   MAC destino ........: FF:EE:DD:CC:BB:11
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.18
+   IP destino .........: 203.0.113.10
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 52000
+   Puerto destino .....: 22 (SSH)
+   Secuencia ..........: 1200
+   ACK ................: 2200
+   Flags ..............: SYN
+[CAPA DE APLICACION] SSH
+   Protocolo ..........: SSH
+   Datos ..............: CLIENT_VERSION_SSH-2.0
+
+================ PAQUETE #18 (linea 19) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:12
+   MAC destino ........: FF:EE:DD:CC:BB:12
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.18
+   IP destino .........: 203.0.113.10
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 52000
+   Puerto destino .....: 22 (SSH)
+   Secuencia ..........: 1201
+   ACK ................: 2201
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SSH
+   Protocolo ..........: SSH
+   Datos ..............: USERAUTH_REQUEST_admin
+
+================ PAQUETE #19 (linea 20) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:13
+   MAC destino ........: FF:EE:DD:CC:BB:13
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.19
+   IP destino .........: 198.51.100.25
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 52010
+   Puerto destino .....: 21 (FTP)
+   Secuencia ..........: 1300
+   ACK ................: 2300
+   Flags ..............: SYN
+[CAPA DE APLICACION] FTP
+   Protocolo ..........: FTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #20 (linea 21) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:14
+   MAC destino ........: FF:EE:DD:CC:BB:14
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.19
+   IP destino .........: 198.51.100.25
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 52010
+   Puerto destino .....: 21 (FTP)
+   Secuencia ..........: 1301
+   ACK ................: 2301
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] FTP
+   Protocolo ..........: FTP
+   Datos ..............: USER_nemo
+
+================ PAQUETE #21 (linea 23) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:15
+   MAC destino ........: FF:EE:DD:CC:BB:15
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.19
+   IP destino .........: 198.51.100.25
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 52010
+   Puerto destino .....: 21 (FTP)
+   Secuencia ..........: 1302
+   ACK ................: 2302
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] FTP
+   Protocolo ..........: FTP
+   Datos ..............: PASS_demo123
+
+================ PAQUETE #22 (linea 24) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:16
+   MAC destino ........: FF:EE:DD:CC:BB:16
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.20
+   IP destino .........: 198.51.100.50
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 52020
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 1400
+   ACK ................: 2400
+   Flags ..............: SYN
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #23 (linea 25) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:17
+   MAC destino ........: FF:EE:DD:CC:BB:17
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.20
+   IP destino .........: 198.51.100.50
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 52020
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 1401
+   ACK ................: 2401
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: HELO_mail.local
+
+================ PAQUETE #24 (linea 26) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:18
+   MAC destino ........: FF:EE:DD:CC:BB:18
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.20
+   IP destino .........: 198.51.100.50
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 52020
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 1402
+   ACK ................: 2402
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: MAIL_FROM_user@local.net
+
+================ PAQUETE #25 (linea 27) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:19
+   MAC destino ........: FF:EE:DD:CC:BB:19
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.20
+   IP destino .........: 198.51.100.50
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 52020
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 1403
+   ACK ................: 2403
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: RCPT_TO_docente@epn.edu
+
+================ PAQUETE #26 (linea 28) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:1A
+   MAC destino ........: FF:EE:DD:CC:BB:1A
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.20
+   IP destino .........: 198.51.100.50
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 52020
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 1404
+   ACK ................: 2404
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: DATA_Entrega_tarea
+
+================ PAQUETE #27 (linea 29) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:1B
+   MAC destino ........: FF:EE:DD:CC:BB:1B
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.21
+   IP destino .........: 198.51.100.60
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 52030
+   Puerto destino .....: 110 (POP3)
+   Secuencia ..........: 1500
+   ACK ................: 2500
+   Flags ..............: SYN
+[CAPA DE APLICACION] POP3
+   Protocolo ..........: POP3
+   Datos ..............: CONNECT
+
+================ PAQUETE #28 (linea 30) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:1C
+   MAC destino ........: FF:EE:DD:CC:BB:1C
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.21
+   IP destino .........: 198.51.100.60
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 52030
+   Puerto destino .....: 110 (POP3)
+   Secuencia ..........: 1501
+   ACK ................: 2501
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] POP3
+   Protocolo ..........: POP3
+   Datos ..............: USER_alumno
+
+================ PAQUETE #29 (linea 31) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:1D
+   MAC destino ........: FF:EE:DD:CC:BB:1D
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.21
+   IP destino .........: 198.51.100.60
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 52030
+   Puerto destino .....: 110 (POP3)
+   Secuencia ..........: 1502
+   ACK ................: 2502
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] POP3
+   Protocolo ..........: POP3
+   Datos ..............: PASS_prueba
+
+================ PAQUETE #30 (linea 32) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:1E
+   MAC destino ........: FF:EE:DD:CC:BB:1E
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.22
+   IP destino .........: 198.51.100.61
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 52040
+   Puerto destino .....: 143 (IMAP)
+   Secuencia ..........: 1600
+   ACK ................: 2600
+   Flags ..............: SYN
+[CAPA DE APLICACION] IMAP
+   Protocolo ..........: IMAP
+   Datos ..............: CONNECT
+
+================ PAQUETE #31 (linea 34) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:1F
+   MAC destino ........: FF:EE:DD:CC:BB:1F
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.22
+   IP destino .........: 198.51.100.61
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 52040
+   Puerto destino .....: 143 (IMAP)
+   Secuencia ..........: 1601
+   ACK ................: 2601
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] IMAP
+   Protocolo ..........: IMAP
+   Datos ..............: LOGIN_user_demo
+
+================ PAQUETE #32 (linea 35) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:20
+   MAC destino ........: FF:EE:DD:CC:BB:20
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.23
+   IP destino .........: 192.168.1.1
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 56000
+   Puerto destino .....: 161 (SNMP)
+   Longitud ...........: 40 bytes
+[CAPA DE APLICACION] SNMP
+   Protocolo ..........: SNMP
+   Datos ..............: GET_sysName
+
+================ PAQUETE #33 (linea 36) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:21
+   MAC destino ........: FF:EE:DD:CC:BB:21
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.1
+   IP destino .........: 192.168.1.23
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 161 (SNMP)
+   Puerto destino .....: 56000
+   Longitud ...........: 58 bytes
+[CAPA DE APLICACION] SNMP
+   Protocolo ..........: SNMP
+   Datos ..............: RESPONSE_sysName_RouterA
+
+================ PAQUETE #34 (linea 37) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:22
+   MAC destino ........: FF:EE:DD:CC:BB:22
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.24
+   IP destino .........: 93.184.216.34
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53010
+   Puerto destino .....: 80 (HTTP)
+   Secuencia ..........: 1700
+   ACK ................: 2700
+   Flags ..............: SYN
+[CAPA DE APLICACION] HTTP
+   Protocolo ..........: HTTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #35 (linea 38) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:23
+   MAC destino ........: FF:EE:DD:CC:BB:23
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.24
+   IP destino .........: 93.184.216.34
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53010
+   Puerto destino .....: 80 (HTTP)
+   Secuencia ..........: 1701
+   ACK ................: 2701
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] HTTP
+   Protocolo ..........: HTTP
+   Datos ..............: POST_/login
+
+================ PAQUETE #36 (linea 39) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:24
+   MAC destino ........: FF:EE:DD:CC:BB:24
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.25
+   IP destino .........: 8.8.8.8
+   TTL ................: 127
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53002
+   Puerto destino .....: 53 (DNS)
+   Longitud ...........: 33 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: QUERY_moodle.org
+
+================ PAQUETE #37 (linea 40) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:25
+   MAC destino ........: FF:EE:DD:CC:BB:25
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 8.8.8.8
+   IP destino .........: 192.168.1.25
+   TTL ................: 118
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53 (DNS)
+   Puerto destino .....: 53002
+   Longitud ...........: 49 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: RESPONSE_moodle.org_172.65.251.78
+
+================ PAQUETE #38 (linea 41) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:26
+   MAC destino ........: FF:EE:DD:CC:BB:26
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.26
+   IP destino .........: 1.1.1.1
+   TTL ................: 64
+   Protocolo ..........: ICMP
+[CAPA DE INTERNET] ICMP (mensaje de control encapsulado en IP; ocupa la posicion de transporte)
+   Tipo de protocolo ..: ICMP
+   Tipo ICMP ..........: 8 (Echo Request)
+   Codigo .............: 0
+   Identificador ......: 2200
+   Secuencia ..........: 1
+   Puertos ............: no aplica (ICMP no usa puertos)
+[CAPA DE APLICACION] PING
+   Protocolo ..........: PING
+   Datos ..............: ECHO_REQUEST
+
+================ PAQUETE #39 (linea 42) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:27
+   MAC destino ........: FF:EE:DD:CC:BB:27
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 1.1.1.1
+   IP destino .........: 192.168.1.26
+   TTL ................: 57
+   Protocolo ..........: ICMP
+[CAPA DE INTERNET] ICMP (mensaje de control encapsulado en IP; ocupa la posicion de transporte)
+   Tipo de protocolo ..: ICMP
+   Tipo ICMP ..........: 0 (Echo Reply)
+   Codigo .............: 0
+   Identificador ......: 2200
+   Secuencia ..........: 1
+   Puertos ............: no aplica (ICMP no usa puertos)
+[CAPA DE APLICACION] PING
+   Protocolo ..........: PING
+   Datos ..............: ECHO_REPLY
+
+================ PAQUETE #40 (linea 43) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:28
+   MAC destino ........: FF:EE:DD:CC:BB:28
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.27
+   IP destino .........: 203.0.113.20
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53020
+   Puerto destino .....: 22 (SSH)
+   Secuencia ..........: 1800
+   ACK ................: 2800
+   Flags ..............: SYN
+[CAPA DE APLICACION] SSH
+   Protocolo ..........: SSH
+   Datos ..............: CLIENT_VERSION_SSH-2.0
+
+================ PAQUETE #41 (linea 44) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:29
+   MAC destino ........: FF:EE:DD:CC:BB:29
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.27
+   IP destino .........: 203.0.113.20
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53020
+   Puerto destino .....: 22 (SSH)
+   Secuencia ..........: 1801
+   ACK ................: 2801
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SSH
+   Protocolo ..........: SSH
+   Datos ..............: CHANNEL_OPEN_shell
+
+================ PAQUETE #42 (linea 46) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:2A
+   MAC destino ........: FF:EE:DD:CC:BB:2A
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.28
+   IP destino .........: 172.217.172.46
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53030
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 1900
+   ACK ................: 2900
+   Flags ..............: SYN
+[CAPA DE APLICACION] TLS
+   Protocolo ..........: TLS
+   Datos ..............: CLIENT_HELLO
+
+================ PAQUETE #43 (linea 47) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:2B
+   MAC destino ........: FF:EE:DD:CC:BB:2B
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.28
+   IP destino .........: 172.217.172.46
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53030
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 1901
+   ACK ................: 2901
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] HTTPS
+   Protocolo ..........: HTTPS
+   Datos ..............: GET_/drive
+
+================ PAQUETE #44 (linea 48) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:2C
+   MAC destino ........: FF:EE:DD:CC:BB:2C
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.29
+   IP destino .........: 198.51.100.80
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53040
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 2000
+   ACK ................: 3000
+   Flags ..............: SYN
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #45 (linea 49) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:2D
+   MAC destino ........: FF:EE:DD:CC:BB:2D
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.29
+   IP destino .........: 198.51.100.80
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53040
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 2001
+   ACK ................: 3001
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: HELO_lab.local
+
+================ PAQUETE #46 (linea 50) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:2E
+   MAC destino ........: FF:EE:DD:CC:BB:2E
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.29
+   IP destino .........: 198.51.100.80
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53040
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 2002
+   ACK ................: 3002
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: MAIL_FROM_redes@lab.net
+
+================ PAQUETE #47 (linea 51) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:2F
+   MAC destino ........: FF:EE:DD:CC:BB:2F
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.30
+   IP destino .........: 198.51.100.81
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53050
+   Puerto destino .....: 110 (POP3)
+   Secuencia ..........: 2100
+   ACK ................: 3100
+   Flags ..............: SYN
+[CAPA DE APLICACION] POP3
+   Protocolo ..........: POP3
+   Datos ..............: CONNECT
+
+================ PAQUETE #48 (linea 52) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:30
+   MAC destino ........: FF:EE:DD:CC:BB:30
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.30
+   IP destino .........: 198.51.100.81
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53050
+   Puerto destino .....: 110 (POP3)
+   Secuencia ..........: 2101
+   ACK ................: 3101
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] POP3
+   Protocolo ..........: POP3
+   Datos ..............: STAT
+
+================ PAQUETE #49 (linea 53) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:31
+   MAC destino ........: FF:EE:DD:CC:BB:31
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.31
+   IP destino .........: 198.51.100.82
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53060
+   Puerto destino .....: 143 (IMAP)
+   Secuencia ..........: 2200
+   ACK ................: 3200
+   Flags ..............: SYN
+[CAPA DE APLICACION] IMAP
+   Protocolo ..........: IMAP
+   Datos ..............: CONNECT
+
+================ PAQUETE #50 (linea 54) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:32
+   MAC destino ........: FF:EE:DD:CC:BB:32
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.31
+   IP destino .........: 198.51.100.82
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53060
+   Puerto destino .....: 143 (IMAP)
+   Secuencia ..........: 2201
+   ACK ................: 3201
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] IMAP
+   Protocolo ..........: IMAP
+   Datos ..............: SELECT_INBOX
+
+================ PAQUETE #51 (linea 55) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:33
+   MAC destino ........: FF:EE:DD:CC:BB:33
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.32
+   IP destino .........: 192.168.1.1
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 56001
+   Puerto destino .....: 161 (SNMP)
+   Longitud ...........: 42 bytes
+[CAPA DE APLICACION] SNMP
+   Protocolo ..........: SNMP
+   Datos ..............: GET_ifNumber
+
+================ PAQUETE #52 (linea 56) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:34
+   MAC destino ........: FF:EE:DD:CC:BB:34
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.1
+   IP destino .........: 192.168.1.32
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 161 (SNMP)
+   Puerto destino .....: 56001
+   Longitud ...........: 44 bytes
+[CAPA DE APLICACION] SNMP
+   Protocolo ..........: SNMP
+   Datos ..............: RESPONSE_ifNumber_24
+
+================ PAQUETE #53 (linea 58) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:35
+   MAC destino ........: FF:EE:DD:CC:BB:35
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.33
+   IP destino .........: 129.6.15.29
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 54001
+   Puerto destino .....: 123 (NTP)
+   Longitud ...........: 32 bytes
+[CAPA DE APLICACION] NTP
+   Protocolo ..........: NTP
+   Datos ..............: TIME_REQUEST
+
+================ PAQUETE #54 (linea 59) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:36
+   MAC destino ........: FF:EE:DD:CC:BB:36
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 129.6.15.29
+   IP destino .........: 192.168.1.33
+   TTL ................: 47
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 123 (NTP)
+   Puerto destino .....: 54001
+   Longitud ...........: 48 bytes
+[CAPA DE APLICACION] NTP
+   Protocolo ..........: NTP
+   Datos ..............: TIME_RESPONSE_2026-04-07T20:16:00
+
+================ PAQUETE #55 (linea 60) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:37
+   MAC destino ........: FF:EE:DD:CC:BB:37
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.34
+   IP destino .........: 93.184.216.34
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53100
+   Puerto destino .....: 80 (HTTP)
+   Secuencia ..........: 2300
+   ACK ................: 3300
+   Flags ..............: SYN
+[CAPA DE APLICACION] HTTP
+   Protocolo ..........: HTTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #56 (linea 61) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:38
+   MAC destino ........: FF:EE:DD:CC:BB:38
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.34
+   IP destino .........: 93.184.216.34
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53100
+   Puerto destino .....: 80 (HTTP)
+   Secuencia ..........: 2301
+   ACK ................: 3301
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] HTTP
+   Protocolo ..........: HTTP
+   Datos ..............: GET_/docs/manual.pdf
+
+================ PAQUETE #57 (linea 62) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:39
+   MAC destino ........: FF:EE:DD:CC:BB:39
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.35
+   IP destino .........: 8.8.8.8
+   TTL ................: 126
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53003
+   Puerto destino .....: 53 (DNS)
+   Longitud ...........: 31 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: QUERY_epn.edu.ec
+
+================ PAQUETE #58 (linea 63) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:3A
+   MAC destino ........: FF:EE:DD:CC:BB:3A
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 8.8.8.8
+   IP destino .........: 192.168.1.35
+   TTL ................: 118
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53 (DNS)
+   Puerto destino .....: 53003
+   Longitud ...........: 55 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: RESPONSE_epn.edu.ec_200.10.150.5
+
+================ PAQUETE #59 (linea 64) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:3B
+   MAC destino ........: FF:EE:DD:CC:BB:3B
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.36
+   IP destino .........: 1.1.1.1
+   TTL ................: 64
+   Protocolo ..........: ICMP
+[CAPA DE INTERNET] ICMP (mensaje de control encapsulado en IP; ocupa la posicion de transporte)
+   Tipo de protocolo ..: ICMP
+   Tipo ICMP ..........: 8 (Echo Request)
+   Codigo .............: 0
+   Identificador ......: 3200
+   Secuencia ..........: 1
+   Puertos ............: no aplica (ICMP no usa puertos)
+[CAPA DE APLICACION] PING
+   Protocolo ..........: PING
+   Datos ..............: ECHO_REQUEST
+
+================ PAQUETE #60 (linea 65) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:3C
+   MAC destino ........: FF:EE:DD:CC:BB:3C
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 1.1.1.1
+   IP destino .........: 192.168.1.36
+   TTL ................: 58
+   Protocolo ..........: ICMP
+[CAPA DE INTERNET] ICMP (mensaje de control encapsulado en IP; ocupa la posicion de transporte)
+   Tipo de protocolo ..: ICMP
+   Tipo ICMP ..........: 0 (Echo Reply)
+   Codigo .............: 0
+   Identificador ......: 3200
+   Secuencia ..........: 1
+   Puertos ............: no aplica (ICMP no usa puertos)
+[CAPA DE APLICACION] PING
+   Protocolo ..........: PING
+   Datos ..............: ECHO_REPLY
+
+================ PAQUETE #61 (linea 66) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:3D
+   MAC destino ........: FF:EE:DD:CC:BB:3D
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.37
+   IP destino .........: 203.0.113.30
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53120
+   Puerto destino .....: 22 (SSH)
+   Secuencia ..........: 2400
+   ACK ................: 3400
+   Flags ..............: SYN
+[CAPA DE APLICACION] SSH
+   Protocolo ..........: SSH
+   Datos ..............: CLIENT_VERSION_SSH-2.0
+
+================ PAQUETE #62 (linea 67) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:3E
+   MAC destino ........: FF:EE:DD:CC:BB:3E
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.37
+   IP destino .........: 203.0.113.30
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53120
+   Puerto destino .....: 22 (SSH)
+   Secuencia ..........: 2401
+   ACK ................: 3401
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SSH
+   Protocolo ..........: SSH
+   Datos ..............: EXEC_show_ip_route
+
+================ PAQUETE #63 (linea 69) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:3F
+   MAC destino ........: FF:EE:DD:CC:BB:3F
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.38
+   IP destino .........: 172.217.0.46
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53130
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 2500
+   ACK ................: 3500
+   Flags ..............: SYN
+[CAPA DE APLICACION] TLS
+   Protocolo ..........: TLS
+   Datos ..............: CLIENT_HELLO
+
+================ PAQUETE #64 (linea 70) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:40
+   MAC destino ........: FF:EE:DD:CC:BB:40
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.38
+   IP destino .........: 172.217.0.46
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53130
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 2501
+   ACK ................: 3501
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] HTTPS
+   Protocolo ..........: HTTPS
+   Datos ..............: GET_/classroom
+
+================ PAQUETE #65 (linea 71) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:41
+   MAC destino ........: FF:EE:DD:CC:BB:41
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.39
+   IP destino .........: 198.51.100.90
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53140
+   Puerto destino .....: 21 (FTP)
+   Secuencia ..........: 2600
+   ACK ................: 3600
+   Flags ..............: SYN
+[CAPA DE APLICACION] FTP
+   Protocolo ..........: FTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #66 (linea 72) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:42
+   MAC destino ........: FF:EE:DD:CC:BB:42
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.39
+   IP destino .........: 198.51.100.90
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53140
+   Puerto destino .....: 21 (FTP)
+   Secuencia ..........: 2601
+   ACK ................: 3601
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] FTP
+   Protocolo ..........: FTP
+   Datos ..............: LIST_/public
+
+================ PAQUETE #67 (linea 73) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:43
+   MAC destino ........: FF:EE:DD:CC:BB:43
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.40
+   IP destino .........: 198.51.100.91
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53150
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 2700
+   ACK ................: 3700
+   Flags ..............: SYN
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #68 (linea 74) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:44
+   MAC destino ........: FF:EE:DD:CC:BB:44
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.40
+   IP destino .........: 198.51.100.91
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53150
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 2701
+   ACK ................: 3701
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: QUIT
+
+================ PAQUETE #69 (linea 75) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:45
+   MAC destino ........: FF:EE:DD:CC:BB:45
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.41
+   IP destino .........: 198.51.100.92
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53160
+   Puerto destino .....: 110 (POP3)
+   Secuencia ..........: 2800
+   ACK ................: 3800
+   Flags ..............: SYN
+[CAPA DE APLICACION] POP3
+   Protocolo ..........: POP3
+   Datos ..............: CONNECT
+
+================ PAQUETE #70 (linea 76) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:46
+   MAC destino ........: FF:EE:DD:CC:BB:46
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.41
+   IP destino .........: 198.51.100.92
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53160
+   Puerto destino .....: 110 (POP3)
+   Secuencia ..........: 2801
+   ACK ................: 3801
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] POP3
+   Protocolo ..........: POP3
+   Datos ..............: RETR_1
+
+================ PAQUETE #71 (linea 77) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:47
+   MAC destino ........: FF:EE:DD:CC:BB:47
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.42
+   IP destino .........: 198.51.100.93
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53170
+   Puerto destino .....: 143 (IMAP)
+   Secuencia ..........: 2900
+   ACK ................: 3900
+   Flags ..............: SYN
+[CAPA DE APLICACION] IMAP
+   Protocolo ..........: IMAP
+   Datos ..............: CONNECT
+
+================ PAQUETE #72 (linea 78) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:48
+   MAC destino ........: FF:EE:DD:CC:BB:48
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.42
+   IP destino .........: 198.51.100.93
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53170
+   Puerto destino .....: 143 (IMAP)
+   Secuencia ..........: 2901
+   ACK ................: 3901
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] IMAP
+   Protocolo ..........: IMAP
+   Datos ..............: FETCH_1:5
+
+================ PAQUETE #73 (linea 80) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:49
+   MAC destino ........: FF:EE:DD:CC:BB:49
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.43
+   IP destino .........: 192.168.1.1
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 56002
+   Puerto destino .....: 161 (SNMP)
+   Longitud ...........: 41 bytes
+[CAPA DE APLICACION] SNMP
+   Protocolo ..........: SNMP
+   Datos ..............: GET_sysUpTime
+
+================ PAQUETE #74 (linea 81) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:4A
+   MAC destino ........: FF:EE:DD:CC:BB:4A
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.1
+   IP destino .........: 192.168.1.43
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 161 (SNMP)
+   Puerto destino .....: 56002
+   Longitud ...........: 46 bytes
+[CAPA DE APLICACION] SNMP
+   Protocolo ..........: SNMP
+   Datos ..............: RESPONSE_sysUpTime_382910
+
+================ PAQUETE #75 (linea 82) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:4B
+   MAC destino ........: FF:EE:DD:CC:BB:4B
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.44
+   IP destino .........: 129.6.15.30
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 54002
+   Puerto destino .....: 123 (NTP)
+   Longitud ...........: 32 bytes
+[CAPA DE APLICACION] NTP
+   Protocolo ..........: NTP
+   Datos ..............: TIME_REQUEST
+
+================ PAQUETE #76 (linea 83) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:4C
+   MAC destino ........: FF:EE:DD:CC:BB:4C
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 129.6.15.30
+   IP destino .........: 192.168.1.44
+   TTL ................: 49
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 123 (NTP)
+   Puerto destino .....: 54002
+   Longitud ...........: 48 bytes
+[CAPA DE APLICACION] NTP
+   Protocolo ..........: NTP
+   Datos ..............: TIME_RESPONSE_2026-04-07T20:17:00
+
+================ PAQUETE #77 (linea 84) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:4D
+   MAC destino ........: FF:EE:DD:CC:BB:4D
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.45
+   IP destino .........: 93.184.216.34
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53200
+   Puerto destino .....: 80 (HTTP)
+   Secuencia ..........: 3000
+   ACK ................: 4000
+   Flags ..............: SYN
+[CAPA DE APLICACION] HTTP
+   Protocolo ..........: HTTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #78 (linea 85) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:4E
+   MAC destino ........: FF:EE:DD:CC:BB:4E
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.45
+   IP destino .........: 93.184.216.34
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53200
+   Puerto destino .....: 80 (HTTP)
+   Secuencia ..........: 3001
+   ACK ................: 4001
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] HTTP
+   Protocolo ..........: HTTP
+   Datos ..............: GET_/api/v1/users
+
+================ PAQUETE #79 (linea 86) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:4F
+   MAC destino ........: FF:EE:DD:CC:BB:4F
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.46
+   IP destino .........: 8.8.4.4
+   TTL ................: 124
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53004
+   Puerto destino .....: 53 (DNS)
+   Longitud ...........: 34 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: QUERY_youtube.com
+
+================ PAQUETE #80 (linea 87) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:50
+   MAC destino ........: FF:EE:DD:CC:BB:50
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 8.8.4.4
+   IP destino .........: 192.168.1.46
+   TTL ................: 116
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53 (DNS)
+   Puerto destino .....: 53004
+   Longitud ...........: 51 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: RESPONSE_youtube.com_142.250.190.14
+
+================ PAQUETE #81 (linea 88) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:51
+   MAC destino ........: FF:EE:DD:CC:BB:51
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.47
+   IP destino .........: 1.1.1.1
+   TTL ................: 64
+   Protocolo ..........: ICMP
+[CAPA DE INTERNET] ICMP (mensaje de control encapsulado en IP; ocupa la posicion de transporte)
+   Tipo de protocolo ..: ICMP
+   Tipo ICMP ..........: 8 (Echo Request)
+   Codigo .............: 0
+   Identificador ......: 4200
+   Secuencia ..........: 1
+   Puertos ............: no aplica (ICMP no usa puertos)
+[CAPA DE APLICACION] PING
+   Protocolo ..........: PING
+   Datos ..............: ECHO_REQUEST
+
+================ PAQUETE #82 (linea 89) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:52
+   MAC destino ........: FF:EE:DD:CC:BB:52
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 1.1.1.1
+   IP destino .........: 192.168.1.47
+   TTL ................: 59
+   Protocolo ..........: ICMP
+[CAPA DE INTERNET] ICMP (mensaje de control encapsulado en IP; ocupa la posicion de transporte)
+   Tipo de protocolo ..: ICMP
+   Tipo ICMP ..........: 0 (Echo Reply)
+   Codigo .............: 0
+   Identificador ......: 4200
+   Secuencia ..........: 1
+   Puertos ............: no aplica (ICMP no usa puertos)
+[CAPA DE APLICACION] PING
+   Protocolo ..........: PING
+   Datos ..............: ECHO_REPLY
+
+================ PAQUETE #83 (linea 91) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:53
+   MAC destino ........: FF:EE:DD:CC:BB:53
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.48
+   IP destino .........: 203.0.113.40
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53220
+   Puerto destino .....: 22 (SSH)
+   Secuencia ..........: 3100
+   ACK ................: 4100
+   Flags ..............: SYN
+[CAPA DE APLICACION] SSH
+   Protocolo ..........: SSH
+   Datos ..............: CLIENT_VERSION_SSH-2.0
+
+================ PAQUETE #84 (linea 92) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:54
+   MAC destino ........: FF:EE:DD:CC:BB:54
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.48
+   IP destino .........: 203.0.113.40
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53220
+   Puerto destino .....: 22 (SSH)
+   Secuencia ..........: 3101
+   ACK ................: 4101
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SSH
+   Protocolo ..........: SSH
+   Datos ..............: SFTP_INIT
+
+================ PAQUETE #85 (linea 93) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:55
+   MAC destino ........: FF:EE:DD:CC:BB:55
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.49
+   IP destino .........: 172.217.5.110
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53230
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 3200
+   ACK ................: 4200
+   Flags ..............: SYN
+[CAPA DE APLICACION] TLS
+   Protocolo ..........: TLS
+   Datos ..............: CLIENT_HELLO
+
+================ PAQUETE #86 (linea 94) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:56
+   MAC destino ........: FF:EE:DD:CC:BB:56
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.49
+   IP destino .........: 172.217.5.110
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53230
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 3201
+   ACK ................: 4201
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] HTTPS
+   Protocolo ..........: HTTPS
+   Datos ..............: GET_/maps
+
+================ PAQUETE #87 (linea 95) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:57
+   MAC destino ........: FF:EE:DD:CC:BB:57
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.50
+   IP destino .........: 198.51.100.100
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53240
+   Puerto destino .....: 21 (FTP)
+   Secuencia ..........: 3300
+   ACK ................: 4300
+   Flags ..............: SYN
+[CAPA DE APLICACION] FTP
+   Protocolo ..........: FTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #88 (linea 96) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:58
+   MAC destino ........: FF:EE:DD:CC:BB:58
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.50
+   IP destino .........: 198.51.100.100
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53240
+   Puerto destino .....: 21 (FTP)
+   Secuencia ..........: 3301
+   ACK ................: 4301
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] FTP
+   Protocolo ..........: FTP
+   Datos ..............: RETR_reporte.csv
+
+================ PAQUETE #89 (linea 97) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:59
+   MAC destino ........: FF:EE:DD:CC:BB:59
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.51
+   IP destino .........: 198.51.100.101
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53250
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 3400
+   ACK ................: 4400
+   Flags ..............: SYN
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #90 (linea 98) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:5A
+   MAC destino ........: FF:EE:DD:CC:BB:5A
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.51
+   IP destino .........: 198.51.100.101
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53250
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 3401
+   ACK ................: 4401
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: VRFY_docente
+
+================ PAQUETE #91 (linea 99) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:5B
+   MAC destino ........: FF:EE:DD:CC:BB:5B
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.52
+   IP destino .........: 198.51.100.102
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53260
+   Puerto destino .....: 110 (POP3)
+   Secuencia ..........: 3500
+   ACK ................: 4500
+   Flags ..............: SYN
+[CAPA DE APLICACION] POP3
+   Protocolo ..........: POP3
+   Datos ..............: CONNECT
+
+================ PAQUETE #92 (linea 100) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:5C
+   MAC destino ........: FF:EE:DD:CC:BB:5C
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.52
+   IP destino .........: 198.51.100.102
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53260
+   Puerto destino .....: 110 (POP3)
+   Secuencia ..........: 3501
+   ACK ................: 4501
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] POP3
+   Protocolo ..........: POP3
+   Datos ..............: LIST
+
+================ PAQUETE #93 (linea 101) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:5D
+   MAC destino ........: FF:EE:DD:CC:BB:5D
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.53
+   IP destino .........: 198.51.100.103
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53270
+   Puerto destino .....: 143 (IMAP)
+   Secuencia ..........: 3600
+   ACK ................: 4600
+   Flags ..............: SYN
+[CAPA DE APLICACION] IMAP
+   Protocolo ..........: IMAP
+   Datos ..............: CONNECT
+
+================ PAQUETE #94 (linea 102) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:5E
+   MAC destino ........: FF:EE:DD:CC:BB:5E
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.53
+   IP destino .........: 198.51.100.103
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53270
+   Puerto destino .....: 143 (IMAP)
+   Secuencia ..........: 3601
+   ACK ................: 4601
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] IMAP
+   Protocolo ..........: IMAP
+   Datos ..............: SEARCH_UNSEEN
+
+================ PAQUETE #95 (linea 104) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:5F
+   MAC destino ........: FF:EE:DD:CC:BB:5F
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.54
+   IP destino .........: 192.168.1.1
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 56003
+   Puerto destino .....: 161 (SNMP)
+   Longitud ...........: 43 bytes
+[CAPA DE APLICACION] SNMP
+   Protocolo ..........: SNMP
+   Datos ..............: GET_cpuUsage
+
+================ PAQUETE #96 (linea 105) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:60
+   MAC destino ........: FF:EE:DD:CC:BB:60
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.1
+   IP destino .........: 192.168.1.54
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 161 (SNMP)
+   Puerto destino .....: 56003
+   Longitud ...........: 45 bytes
+[CAPA DE APLICACION] SNMP
+   Protocolo ..........: SNMP
+   Datos ..............: RESPONSE_cpuUsage_12
+
+================ PAQUETE #97 (linea 106) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:61
+   MAC destino ........: FF:EE:DD:CC:BB:61
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.55
+   IP destino .........: 129.6.15.31
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 54003
+   Puerto destino .....: 123 (NTP)
+   Longitud ...........: 32 bytes
+[CAPA DE APLICACION] NTP
+   Protocolo ..........: NTP
+   Datos ..............: TIME_REQUEST
+
+================ PAQUETE #98 (linea 107) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:62
+   MAC destino ........: FF:EE:DD:CC:BB:62
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 129.6.15.31
+   IP destino .........: 192.168.1.55
+   TTL ................: 50
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 123 (NTP)
+   Puerto destino .....: 54003
+   Longitud ...........: 48 bytes
+[CAPA DE APLICACION] NTP
+   Protocolo ..........: NTP
+   Datos ..............: TIME_RESPONSE_2026-04-07T20:18:00
+
+================ PAQUETE #99 (linea 108) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:63
+   MAC destino ........: FF:EE:DD:CC:BB:63
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.56
+   IP destino .........: 93.184.216.34
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53300
+   Puerto destino .....: 80 (HTTP)
+   Secuencia ..........: 3700
+   ACK ................: 4700
+   Flags ..............: SYN
+[CAPA DE APLICACION] HTTP
+   Protocolo ..........: HTTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #100 (linea 109) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:64
+   MAC destino ........: FF:EE:DD:CC:BB:64
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.56
+   IP destino .........: 93.184.216.34
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53300
+   Puerto destino .....: 80 (HTTP)
+   Secuencia ..........: 3701
+   ACK ................: 4701
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] HTTP
+   Protocolo ..........: HTTP
+   Datos ..............: PUT_/api/v1/task
+
+================ PAQUETE #101 (linea 110) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:65
+   MAC destino ........: FF:EE:DD:CC:BB:65
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.57
+   IP destino .........: 8.8.8.8
+   TTL ................: 123
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53005
+   Puerto destino .....: 53 (DNS)
+   Longitud ...........: 35 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: QUERY_packettracer.com
+
+================ PAQUETE #102 (linea 111) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:66
+   MAC destino ........: FF:EE:DD:CC:BB:66
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 8.8.8.8
+   IP destino .........: 192.168.1.57
+   TTL ................: 117
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53 (DNS)
+   Puerto destino .....: 53005
+   Longitud ...........: 57 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: RESPONSE_packettracer.com_198.133.219.25
+
+================ PAQUETE #103 (linea 112) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:67
+   MAC destino ........: FF:EE:DD:CC:BB:67
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.58
+   IP destino .........: 1.1.1.1
+   TTL ................: 64
+   Protocolo ..........: ICMP
+[CAPA DE INTERNET] ICMP (mensaje de control encapsulado en IP; ocupa la posicion de transporte)
+   Tipo de protocolo ..: ICMP
+   Tipo ICMP ..........: 8 (Echo Request)
+   Codigo .............: 0
+   Identificador ......: 5200
+   Secuencia ..........: 1
+   Puertos ............: no aplica (ICMP no usa puertos)
+[CAPA DE APLICACION] PING
+   Protocolo ..........: PING
+   Datos ..............: ECHO_REQUEST
+
+================ PAQUETE #104 (linea 113) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:68
+   MAC destino ........: FF:EE:DD:CC:BB:68
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 1.1.1.1
+   IP destino .........: 192.168.1.58
+   TTL ................: 60
+   Protocolo ..........: ICMP
+[CAPA DE INTERNET] ICMP (mensaje de control encapsulado en IP; ocupa la posicion de transporte)
+   Tipo de protocolo ..: ICMP
+   Tipo ICMP ..........: 0 (Echo Reply)
+   Codigo .............: 0
+   Identificador ......: 5200
+   Secuencia ..........: 1
+   Puertos ............: no aplica (ICMP no usa puertos)
+[CAPA DE APLICACION] PING
+   Protocolo ..........: PING
+   Datos ..............: ECHO_REPLY
+
+================ PAQUETE #105 (linea 115) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:69
+   MAC destino ........: FF:EE:DD:CC:BB:69
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.59
+   IP destino .........: 203.0.113.50
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53320
+   Puerto destino .....: 22 (SSH)
+   Secuencia ..........: 3800
+   ACK ................: 4800
+   Flags ..............: SYN
+[CAPA DE APLICACION] SSH
+   Protocolo ..........: SSH
+   Datos ..............: CLIENT_VERSION_SSH-2.0
+
+================ PAQUETE #106 (linea 116) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:6A
+   MAC destino ........: FF:EE:DD:CC:BB:6A
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.59
+   IP destino .........: 203.0.113.50
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53320
+   Puerto destino .....: 22 (SSH)
+   Secuencia ..........: 3801
+   ACK ................: 4801
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SSH
+   Protocolo ..........: SSH
+   Datos ..............: EXEC_show_vlan_brief
+
+================ PAQUETE #107 (linea 117) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:6B
+   MAC destino ........: FF:EE:DD:CC:BB:6B
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.60
+   IP destino .........: 172.217.10.78
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53330
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 3900
+   ACK ................: 4900
+   Flags ..............: SYN
+[CAPA DE APLICACION] TLS
+   Protocolo ..........: TLS
+   Datos ..............: CLIENT_HELLO
+
+================ PAQUETE #108 (linea 118) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:6C
+   MAC destino ........: FF:EE:DD:CC:BB:6C
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.60
+   IP destino .........: 172.217.10.78
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53330
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 3901
+   ACK ................: 4901
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] HTTPS
+   Protocolo ..........: HTTPS
+   Datos ..............: GET_/meet
+
+================ PAQUETE #109 (linea 119) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:6D
+   MAC destino ........: FF:EE:DD:CC:BB:6D
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.61
+   IP destino .........: 198.51.100.110
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53340
+   Puerto destino .....: 21 (FTP)
+   Secuencia ..........: 4000
+   ACK ................: 5000
+   Flags ..............: SYN
+[CAPA DE APLICACION] FTP
+   Protocolo ..........: FTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #110 (linea 120) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:6E
+   MAC destino ........: FF:EE:DD:CC:BB:6E
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.61
+   IP destino .........: 198.51.100.110
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53340
+   Puerto destino .....: 21 (FTP)
+   Secuencia ..........: 4001
+   ACK ................: 5001
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] FTP
+   Protocolo ..........: FTP
+   Datos ..............: STOR_respaldo.zip
+
+================ PAQUETE #111 (linea 121) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:6F
+   MAC destino ........: FF:EE:DD:CC:BB:6F
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.62
+   IP destino .........: 198.51.100.111
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53350
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 4100
+   ACK ................: 5100
+   Flags ..............: SYN
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #112 (linea 122) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:70
+   MAC destino ........: FF:EE:DD:CC:BB:70
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.62
+   IP destino .........: 198.51.100.111
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53350
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 4101
+   ACK ................: 5101
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: AUTH_LOGIN
+
+================ PAQUETE #113 (linea 123) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:71
+   MAC destino ........: FF:EE:DD:CC:BB:71
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.63
+   IP destino .........: 198.51.100.112
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53360
+   Puerto destino .....: 110 (POP3)
+   Secuencia ..........: 4200
+   ACK ................: 5200
+   Flags ..............: SYN
+[CAPA DE APLICACION] POP3
+   Protocolo ..........: POP3
+   Datos ..............: CONNECT
+
+================ PAQUETE #114 (linea 124) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:72
+   MAC destino ........: FF:EE:DD:CC:BB:72
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.63
+   IP destino .........: 198.51.100.112
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53360
+   Puerto destino .....: 110 (POP3)
+   Secuencia ..........: 4201
+   ACK ................: 5201
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] POP3
+   Protocolo ..........: POP3
+   Datos ..............: DELE_1
+
+================ PAQUETE #115 (linea 126) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:73
+   MAC destino ........: FF:EE:DD:CC:BB:73
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.64
+   IP destino .........: 198.51.100.113
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53370
+   Puerto destino .....: 143 (IMAP)
+   Secuencia ..........: 4300
+   ACK ................: 5300
+   Flags ..............: SYN
+[CAPA DE APLICACION] IMAP
+   Protocolo ..........: IMAP
+   Datos ..............: CONNECT
+
+================ PAQUETE #116 (linea 127) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:74
+   MAC destino ........: FF:EE:DD:CC:BB:74
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.64
+   IP destino .........: 198.51.100.113
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53370
+   Puerto destino .....: 143 (IMAP)
+   Secuencia ..........: 4301
+   ACK ................: 5301
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] IMAP
+   Protocolo ..........: IMAP
+   Datos ..............: LOGOUT
+
+================ PAQUETE #117 (linea 128) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:75
+   MAC destino ........: FF:EE:DD:CC:BB:75
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.65
+   IP destino .........: 192.168.1.1
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 56004
+   Puerto destino .....: 161 (SNMP)
+   Longitud ...........: 40 bytes
+[CAPA DE APLICACION] SNMP
+   Protocolo ..........: SNMP
+   Datos ..............: GET_memUsage
+
+================ PAQUETE #118 (linea 129) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:76
+   MAC destino ........: FF:EE:DD:CC:BB:76
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.1
+   IP destino .........: 192.168.1.65
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 161 (SNMP)
+   Puerto destino .....: 56004
+   Longitud ...........: 45 bytes
+[CAPA DE APLICACION] SNMP
+   Protocolo ..........: SNMP
+   Datos ..............: RESPONSE_memUsage_38
+
+================ PAQUETE #119 (linea 130) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:77
+   MAC destino ........: FF:EE:DD:CC:BB:77
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.66
+   IP destino .........: 129.6.15.32
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 54004
+   Puerto destino .....: 123 (NTP)
+   Longitud ...........: 32 bytes
+[CAPA DE APLICACION] NTP
+   Protocolo ..........: NTP
+   Datos ..............: TIME_REQUEST
+
+================ PAQUETE #120 (linea 131) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:78
+   MAC destino ........: FF:EE:DD:CC:BB:78
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 129.6.15.32
+   IP destino .........: 192.168.1.66
+   TTL ................: 48
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 123 (NTP)
+   Puerto destino .....: 54004
+   Longitud ...........: 48 bytes
+[CAPA DE APLICACION] NTP
+   Protocolo ..........: NTP
+   Datos ..............: TIME_RESPONSE_2026-04-07T20:19:00
+
+================ PAQUETE #121 (linea 132) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:79
+   MAC destino ........: FF:EE:DD:CC:BB:79
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.67
+   IP destino .........: 93.184.216.34
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53400
+   Puerto destino .....: 80 (HTTP)
+   Secuencia ..........: 4400
+   ACK ................: 5400
+   Flags ..............: SYN
+[CAPA DE APLICACION] HTTP
+   Protocolo ..........: HTTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #122 (linea 133) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:7A
+   MAC destino ........: FF:EE:DD:CC:BB:7A
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.67
+   IP destino .........: 93.184.216.34
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53400
+   Puerto destino .....: 80 (HTTP)
+   Secuencia ..........: 4401
+   ACK ................: 5401
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] HTTP
+   Protocolo ..........: HTTP
+   Datos ..............: DELETE_/api/v1/item/3
+
+================ PAQUETE #123 (linea 134) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:7B
+   MAC destino ........: FF:EE:DD:CC:BB:7B
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.68
+   IP destino .........: 8.8.8.8
+   TTL ................: 122
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53006
+   Puerto destino .....: 53 (DNS)
+   Longitud ...........: 32 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: QUERY_github.com
+
+================ PAQUETE #124 (linea 135) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:7C
+   MAC destino ........: FF:EE:DD:CC:BB:7C
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 8.8.8.8
+   IP destino .........: 192.168.1.68
+   TTL ................: 116
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53 (DNS)
+   Puerto destino .....: 53006
+   Longitud ...........: 50 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: RESPONSE_github.com_140.82.112.3
+
+================ PAQUETE #125 (linea 136) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:7D
+   MAC destino ........: FF:EE:DD:CC:BB:7D
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.69
+   IP destino .........: 1.1.1.1
+   TTL ................: 64
+   Protocolo ..........: ICMP
+[CAPA DE INTERNET] ICMP (mensaje de control encapsulado en IP; ocupa la posicion de transporte)
+   Tipo de protocolo ..: ICMP
+   Tipo ICMP ..........: 8 (Echo Request)
+   Codigo .............: 0
+   Identificador ......: 6200
+   Secuencia ..........: 1
+   Puertos ............: no aplica (ICMP no usa puertos)
+[CAPA DE APLICACION] PING
+   Protocolo ..........: PING
+   Datos ..............: ECHO_REQUEST
+
+================ PAQUETE #126 (linea 137) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:7E
+   MAC destino ........: FF:EE:DD:CC:BB:7E
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 1.1.1.1
+   IP destino .........: 192.168.1.69
+   TTL ................: 61
+   Protocolo ..........: ICMP
+[CAPA DE INTERNET] ICMP (mensaje de control encapsulado en IP; ocupa la posicion de transporte)
+   Tipo de protocolo ..: ICMP
+   Tipo ICMP ..........: 0 (Echo Reply)
+   Codigo .............: 0
+   Identificador ......: 6200
+   Secuencia ..........: 1
+   Puertos ............: no aplica (ICMP no usa puertos)
+[CAPA DE APLICACION] PING
+   Protocolo ..........: PING
+   Datos ..............: ECHO_REPLY
+
+================ PAQUETE #127 (linea 139) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:7F
+   MAC destino ........: FF:EE:DD:CC:BB:7F
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.70
+   IP destino .........: 203.0.113.60
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53420
+   Puerto destino .....: 22 (SSH)
+   Secuencia ..........: 4500
+   ACK ................: 5500
+   Flags ..............: SYN
+[CAPA DE APLICACION] SSH
+   Protocolo ..........: SSH
+   Datos ..............: CLIENT_VERSION_SSH-2.0
+
+================ PAQUETE #128 (linea 140) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:80
+   MAC destino ........: FF:EE:DD:CC:BB:80
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.70
+   IP destino .........: 203.0.113.60
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53420
+   Puerto destino .....: 22 (SSH)
+   Secuencia ..........: 4501
+   ACK ................: 5501
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SSH
+   Protocolo ..........: SSH
+   Datos ..............: EXEC_copy_run_start
+
+================ PAQUETE #129 (linea 141) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:81
+   MAC destino ........: FF:EE:DD:CC:BB:81
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.71
+   IP destino .........: 172.217.12.14
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53430
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 4600
+   ACK ................: 5600
+   Flags ..............: SYN
+[CAPA DE APLICACION] TLS
+   Protocolo ..........: TLS
+   Datos ..............: CLIENT_HELLO
+
+================ PAQUETE #130 (linea 142) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:82
+   MAC destino ........: FF:EE:DD:CC:BB:82
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.71
+   IP destino .........: 172.217.12.14
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53430
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 4601
+   ACK ................: 5601
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] HTTPS
+   Protocolo ..........: HTTPS
+   Datos ..............: GET_/docs
+
+================ PAQUETE #131 (linea 143) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:83
+   MAC destino ........: FF:EE:DD:CC:BB:83
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.72
+   IP destino .........: 198.51.100.120
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53440
+   Puerto destino .....: 21 (FTP)
+   Secuencia ..........: 4700
+   ACK ................: 5700
+   Flags ..............: SYN
+[CAPA DE APLICACION] FTP
+   Protocolo ..........: FTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #132 (linea 144) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:84
+   MAC destino ........: FF:EE:DD:CC:BB:84
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.72
+   IP destino .........: 198.51.100.120
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53440
+   Puerto destino .....: 21 (FTP)
+   Secuencia ..........: 4701
+   ACK ................: 5701
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] FTP
+   Protocolo ..........: FTP
+   Datos ..............: PWD
+
+================ PAQUETE #133 (linea 145) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:85
+   MAC destino ........: FF:EE:DD:CC:BB:85
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.73
+   IP destino .........: 198.51.100.121
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53450
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 4800
+   ACK ................: 5800
+   Flags ..............: SYN
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #134 (linea 146) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:86
+   MAC destino ........: FF:EE:DD:CC:BB:86
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.73
+   IP destino .........: 198.51.100.121
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53450
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 4801
+   ACK ................: 5801
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: NOOP
+
+================ PAQUETE #135 (linea 147) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:87
+   MAC destino ........: FF:EE:DD:CC:BB:87
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.74
+   IP destino .........: 198.51.100.122
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53460
+   Puerto destino .....: 110 (POP3)
+   Secuencia ..........: 4900
+   ACK ................: 5900
+   Flags ..............: SYN
+[CAPA DE APLICACION] POP3
+   Protocolo ..........: POP3
+   Datos ..............: CONNECT
+
+================ PAQUETE #136 (linea 148) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:88
+   MAC destino ........: FF:EE:DD:CC:BB:88
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.74
+   IP destino .........: 198.51.100.122
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53460
+   Puerto destino .....: 110 (POP3)
+   Secuencia ..........: 4901
+   ACK ................: 5901
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] POP3
+   Protocolo ..........: POP3
+   Datos ..............: QUIT
+
+================ PAQUETE #137 (linea 150) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:89
+   MAC destino ........: FF:EE:DD:CC:BB:89
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.75
+   IP destino .........: 198.51.100.123
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53470
+   Puerto destino .....: 143 (IMAP)
+   Secuencia ..........: 5000
+   ACK ................: 6000
+   Flags ..............: SYN
+[CAPA DE APLICACION] IMAP
+   Protocolo ..........: IMAP
+   Datos ..............: CONNECT
+
+================ PAQUETE #138 (linea 151) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:8A
+   MAC destino ........: FF:EE:DD:CC:BB:8A
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.75
+   IP destino .........: 198.51.100.123
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53470
+   Puerto destino .....: 143 (IMAP)
+   Secuencia ..........: 5001
+   ACK ................: 6001
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] IMAP
+   Protocolo ..........: IMAP
+   Datos ..............: STATUS_INBOX
+
+================ PAQUETE #139 (linea 152) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:8B
+   MAC destino ........: FF:EE:DD:CC:BB:8B
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.76
+   IP destino .........: 192.168.1.1
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 56005
+   Puerto destino .....: 161 (SNMP)
+   Longitud ...........: 42 bytes
+[CAPA DE APLICACION] SNMP
+   Protocolo ..........: SNMP
+   Datos ..............: GET_temperature
+
+================ PAQUETE #140 (linea 153) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:8C
+   MAC destino ........: FF:EE:DD:CC:BB:8C
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.1
+   IP destino .........: 192.168.1.76
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 161 (SNMP)
+   Puerto destino .....: 56005
+   Longitud ...........: 47 bytes
+[CAPA DE APLICACION] SNMP
+   Protocolo ..........: SNMP
+   Datos ..............: RESPONSE_temperature_41
+
+================ PAQUETE #141 (linea 154) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:8D
+   MAC destino ........: FF:EE:DD:CC:BB:8D
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.77
+   IP destino .........: 129.6.15.33
+   TTL ................: 64
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 54005
+   Puerto destino .....: 123 (NTP)
+   Longitud ...........: 32 bytes
+[CAPA DE APLICACION] NTP
+   Protocolo ..........: NTP
+   Datos ..............: TIME_REQUEST
+
+================ PAQUETE #142 (linea 155) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:8E
+   MAC destino ........: FF:EE:DD:CC:BB:8E
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 129.6.15.33
+   IP destino .........: 192.168.1.77
+   TTL ................: 49
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 123 (NTP)
+   Puerto destino .....: 54005
+   Longitud ...........: 48 bytes
+[CAPA DE APLICACION] NTP
+   Protocolo ..........: NTP
+   Datos ..............: TIME_RESPONSE_2026-04-07T20:20:00
+
+================ PAQUETE #143 (linea 156) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:8F
+   MAC destino ........: FF:EE:DD:CC:BB:8F
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.78
+   IP destino .........: 93.184.216.34
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53500
+   Puerto destino .....: 80 (HTTP)
+   Secuencia ..........: 5100
+   ACK ................: 6100
+   Flags ..............: SYN
+[CAPA DE APLICACION] HTTP
+   Protocolo ..........: HTTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #144 (linea 157) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:90
+   MAC destino ........: FF:EE:DD:CC:BB:90
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.78
+   IP destino .........: 93.184.216.34
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53500
+   Puerto destino .....: 80 (HTTP)
+   Secuencia ..........: 5101
+   ACK ................: 6101
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] HTTP
+   Protocolo ..........: HTTP
+   Datos ..............: GET_/status
+
+================ PAQUETE #145 (linea 158) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:91
+   MAC destino ........: FF:EE:DD:CC:BB:91
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.79
+   IP destino .........: 8.8.4.4
+   TTL ................: 121
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53007
+   Puerto destino .....: 53 (DNS)
+   Longitud ...........: 34 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: QUERY_cisco.com
+
+================ PAQUETE #146 (linea 159) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:92
+   MAC destino ........: FF:EE:DD:CC:BB:92
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 8.8.4.4
+   IP destino .........: 192.168.1.79
+   TTL ................: 115
+   Protocolo ..........: UDP
+[CAPA DE TRANSPORTE] UDP
+   Tipo de protocolo ..: UDP
+   Puerto origen ......: 53 (DNS)
+   Puerto destino .....: 53007
+   Longitud ...........: 49 bytes
+[CAPA DE APLICACION] DNS
+   Protocolo ..........: DNS
+   Datos ..............: RESPONSE_cisco.com_72.163.4.161
+
+================ PAQUETE #147 (linea 160) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:93
+   MAC destino ........: FF:EE:DD:CC:BB:93
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.80
+   IP destino .........: 1.1.1.1
+   TTL ................: 64
+   Protocolo ..........: ICMP
+[CAPA DE INTERNET] ICMP (mensaje de control encapsulado en IP; ocupa la posicion de transporte)
+   Tipo de protocolo ..: ICMP
+   Tipo ICMP ..........: 8 (Echo Request)
+   Codigo .............: 0
+   Identificador ......: 7200
+   Secuencia ..........: 1
+   Puertos ............: no aplica (ICMP no usa puertos)
+[CAPA DE APLICACION] PING
+   Protocolo ..........: PING
+   Datos ..............: ECHO_REQUEST
+
+================ PAQUETE #148 (linea 161) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:94
+   MAC destino ........: FF:EE:DD:CC:BB:94
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 1.1.1.1
+   IP destino .........: 192.168.1.80
+   TTL ................: 60
+   Protocolo ..........: ICMP
+[CAPA DE INTERNET] ICMP (mensaje de control encapsulado en IP; ocupa la posicion de transporte)
+   Tipo de protocolo ..: ICMP
+   Tipo ICMP ..........: 0 (Echo Reply)
+   Codigo .............: 0
+   Identificador ......: 7200
+   Secuencia ..........: 1
+   Puertos ............: no aplica (ICMP no usa puertos)
+[CAPA DE APLICACION] PING
+   Protocolo ..........: PING
+   Datos ..............: ECHO_REPLY
+
+================ PAQUETE #149 (linea 163) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:95
+   MAC destino ........: FF:EE:DD:CC:BB:95
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.81
+   IP destino .........: 203.0.113.70
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53520
+   Puerto destino .....: 22 (SSH)
+   Secuencia ..........: 5200
+   ACK ................: 6200
+   Flags ..............: SYN
+[CAPA DE APLICACION] SSH
+   Protocolo ..........: SSH
+   Datos ..............: CLIENT_VERSION_SSH-2.0
+
+================ PAQUETE #150 (linea 164) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:96
+   MAC destino ........: FF:EE:DD:CC:BB:96
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.81
+   IP destino .........: 203.0.113.70
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53520
+   Puerto destino .....: 22 (SSH)
+   Secuencia ..........: 5201
+   ACK ................: 6201
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SSH
+   Protocolo ..........: SSH
+   Datos ..............: EXEC_reload_in_5
+
+================ PAQUETE #151 (linea 165) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:97
+   MAC destino ........: FF:EE:DD:CC:BB:97
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.82
+   IP destino .........: 172.217.14.206
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53530
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 5300
+   ACK ................: 6300
+   Flags ..............: SYN
+[CAPA DE APLICACION] TLS
+   Protocolo ..........: TLS
+   Datos ..............: CLIENT_HELLO
+
+================ PAQUETE #152 (linea 166) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:98
+   MAC destino ........: FF:EE:DD:CC:BB:98
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.82
+   IP destino .........: 172.217.14.206
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53530
+   Puerto destino .....: 443 (HTTPS)
+   Secuencia ..........: 5301
+   ACK ................: 6301
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] HTTPS
+   Protocolo ..........: HTTPS
+   Datos ..............: GET_/calendar
+
+================ PAQUETE #153 (linea 167) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:99
+   MAC destino ........: FF:EE:DD:CC:BB:99
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.83
+   IP destino .........: 198.51.100.130
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53540
+   Puerto destino .....: 21 (FTP)
+   Secuencia ..........: 5400
+   ACK ................: 6400
+   Flags ..............: SYN
+[CAPA DE APLICACION] FTP
+   Protocolo ..........: FTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #154 (linea 168) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:9A
+   MAC destino ........: FF:EE:DD:CC:BB:9A
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.83
+   IP destino .........: 198.51.100.130
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53540
+   Puerto destino .....: 21 (FTP)
+   Secuencia ..........: 5401
+   ACK ................: 6401
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] FTP
+   Protocolo ..........: FTP
+   Datos ..............: CWD_/materiales
+
+================ PAQUETE #155 (linea 169) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:9B
+   MAC destino ........: FF:EE:DD:CC:BB:9B
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.84
+   IP destino .........: 198.51.100.131
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53550
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 5500
+   ACK ................: 6500
+   Flags ..............: SYN
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: CONNECT
+
+================ PAQUETE #156 (linea 170) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:9C
+   MAC destino ........: FF:EE:DD:CC:BB:9C
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.84
+   IP destino .........: 198.51.100.131
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53550
+   Puerto destino .....: 25 (SMTP)
+   Secuencia ..........: 5501
+   ACK ................: 6501
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] SMTP
+   Protocolo ..........: SMTP
+   Datos ..............: RSET
+
+================ PAQUETE #157 (linea 171) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:9D
+   MAC destino ........: FF:EE:DD:CC:BB:9D
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.85
+   IP destino .........: 198.51.100.132
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53560
+   Puerto destino .....: 110 (POP3)
+   Secuencia ..........: 5600
+   ACK ................: 6600
+   Flags ..............: SYN
+[CAPA DE APLICACION] POP3
+   Protocolo ..........: POP3
+   Datos ..............: CONNECT
+
+================ PAQUETE #158 (linea 172) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:9E
+   MAC destino ........: FF:EE:DD:CC:BB:9E
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.85
+   IP destino .........: 198.51.100.132
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53560
+   Puerto destino .....: 110 (POP3)
+   Secuencia ..........: 5601
+   ACK ................: 6601
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] POP3
+   Protocolo ..........: POP3
+   Datos ..............: UIDL
+
+================ PAQUETE #159 (linea 173) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:9F
+   MAC destino ........: FF:EE:DD:CC:BB:9F
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.86
+   IP destino .........: 198.51.100.133
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53570
+   Puerto destino .....: 143 (IMAP)
+   Secuencia ..........: 5700
+   ACK ................: 6700
+   Flags ..............: SYN
+[CAPA DE APLICACION] IMAP
+   Protocolo ..........: IMAP
+   Datos ..............: CONNECT
+
+================ PAQUETE #160 (linea 174) ================
+[CAPA DE ACCESO A RED] Ethernet
+   MAC origen .........: AA:BB:CC:DD:EE:A0
+   MAC destino ........: FF:EE:DD:CC:BB:A0
+   Tipo de trama ......: IPv4
+[CAPA DE INTERNET] IP
+   IP origen ..........: 192.168.1.86
+   IP destino .........: 198.51.100.133
+   TTL ................: 64
+   Protocolo ..........: TCP
+[CAPA DE TRANSPORTE] TCP
+   Tipo de protocolo ..: TCP
+   Puerto origen ......: 53570
+   Puerto destino .....: 143 (IMAP)
+   Secuencia ..........: 5701
+   ACK ................: 6701
+   Flags ..............: PSH-ACK
+[CAPA DE APLICACION] IMAP
+   Protocolo ..........: IMAP
+   Datos ..............: IDLE
+
+
+================ RESUMEN ESTADISTICO ================
+Lineas leidas del archivo .....: 174
+Lineas vacias (separadores) ...: 14
+Lineas con error ..............: 0
+Total de paquetes procesados ..: 160
+
+-- Protocolo sobre IP --
+Paquetes TCP ..................: 104   (65,0 %)
+Paquetes UDP ..................: 42   (26,3 %)
+Paquetes ICMP .................: 14   (8,8 %)
+
+-- Paquetes por protocolo de aplicacion --
+   SMTP                      18   (11,3 %)
+   DNS                       16   (10,0 %)
+   POP3                      15   (9,4 %)
+   HTTP                      14   (8,8 %)
+   IMAP                      14   (8,8 %)
+   PING                      14   (8,8 %)
+   SSH                       14   (8,8 %)
+   FTP                       13   (8,1 %)
+   NTP                       12   (7,5 %)
+   SNMP                      12   (7,5 %)
+   HTTPS                      8   (5,0 %)
+   TLS                        8   (5,0 %)
+   DHCP                       2   (1,3 %)
+
+-- Mas frecuentes --
+IP origen mas frecuente .......: 192.168.1.1, 1.1.1.1 (7 paquetes cada una, empate)
+IP destino mas frecuente ......: 93.184.216.34 (14 paquetes)
+Puerto destino mas frecuente ..: 25 (SMTP) (18 de 146 paquetes TCP/UDP)
+
+-- Flags TCP --
+   Por combinacion:
+   PSH-ACK                   54
+   SYN                       48
+   ACK                        2
+   Por flag individual:
+   ACK                       56
+   PSH                       54
+   SYN                       48
+
+-- Consultas y respuestas --
+   Protocolo   Consultas  Respuestas
+   DNS                 8           8
+   DHCP                1           1
+   ICMP                7           7
+   NTP                 6           6
+   SNMP                6           6
+   TOTAL              28          28
+
+-- Resumen por servicio (segun puerto bien conocido) --
+   SMTP                      18   (11,3 %)
+   DNS                       16   (10,0 %)
+   HTTPS                     16   (10,0 %)
+   POP3                      15   (9,4 %)
+   HTTP                      14   (8,8 %)
+   ICMP (sin puertos)        14   (8,8 %)
+   IMAP                      14   (8,8 %)
+   SSH                       14   (8,8 %)
+   FTP                       13   (8,1 %)
+   NTP                       12   (7,5 %)
+   SNMP                      12   (7,5 %)
+   DHCP                       2   (1,3 %)
+
+================ LINEAS CON ERROR (0) ================
+No se encontraron lineas mal formadas: todas las lineas no vacias se interpretaron correctamente.
