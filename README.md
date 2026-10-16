@@ -363,22 +363,14 @@ Valores obtenidos con `APE2_Analizador/recursos/paquetes.txt`:
 - El análisis se realiza sobre el archivo completo cargado en memoria, lo que es adecuado para el tamaño del dataset de la práctica.
 
 ## Referencias
-
-[1] D. Maldonado-Ruiz, «Guía práctica APE2: Analizador de tráfico de red basado en el modelo TCP/IP», Introducción a Redes, Universidad Técnica de Ambato, 2026.
-
-[2] D. Maldonado-Ruiz, «Modelos de Referencia de Red: OSI y TCP/IP», material de clase, Introducción a Redes, Universidad Técnica de Ambato, 2026.
-
-[3] J. F. Kurose y K. W. Ross, *Computer Networking: A Top-Down Approach*, 9.ª ed. Pearson, 2025.
-
-[4] A. S. Tanenbaum y D. J. Wetherall, *Computer Networks*, 6.ª ed. Pearson, 2022.
-
-[5] J. Postel, «Internet Protocol», RFC 791, IETF, 1981.
-
-[6] J. Postel, «User Datagram Protocol», RFC 768, IETF, 1980.
-
-[7] J. Postel, «Internet Control Message Protocol», RFC 792, IETF, 1981.
-
-[8] W. Eddy, Ed., «Transmission Control Protocol (TCP)», RFC 9293, IETF, 2022.
+ 
+[1] D. Maldonado-Ruiz, «Abstracción de capas», presentación de clase, Introducción a Redes, Universidad Técnica de Ambato, Ambato, Ecuador, sep. 2026.
+ 
+[2] D. Maldonado-Ruiz, «Protocolos», presentación de clase, Introducción a Redes, Universidad Técnica de Ambato, Ambato, Ecuador, sep. 2026.
+ 
+[3] D. Maldonado-Ruiz, «Modelos OSI y TCP/IP», presentación de clase, Introducción a Redes, Universidad Técnica de Ambato, Ambato, Ecuador, oct. 2026.
+ 
+[4] J. F. Kurose y K. W. Ross, *Computer Networking: A Top-Down Approach*, 9.ª ed. Hoboken, NJ, EE. UU.: Pearson Education, 2025.
 
 ---
 
