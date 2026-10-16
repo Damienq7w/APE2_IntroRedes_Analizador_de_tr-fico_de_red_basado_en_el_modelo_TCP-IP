@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": ["APE2_Analizador/src"],
+    "java.project.outputPath": "APE2_Analizador/bin",
+    "java.project.referencedLibraries": [],
+    "files.encoding": "utf8"
+}

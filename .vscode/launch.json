@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "analizador.app.main",
+            "projectName": "APE2_IntroRedes_Analizador_de_tr-fico_de_red_basado_en_el_modelo_TCP-IP_ecfd63c1"
+        },
+        {
+            "type": "java",
+            "name": "Analizar paquetes.txt",
+            "request": "launch",
+            "mainClass": "analizador.app.Principal",
+            "cwd": "${workspaceFolder}/APE2_Analizador",
+            "args": "recursos/paquetes.txt",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Probar lineas con error",
+            "request": "launch",
+            "mainClass": "analizador.app.Principal",
+            "cwd": "${workspaceFolder}/APE2_Analizador",
+            "args": "recursos/paquetes_prueba.txt",
+            "console": "integratedTerminal"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+﻿ETH{src=AA:BB:CC:DD:EE:01,dst=FF:EE:DD:CC:BB:01,type=IPv4}|IP{src=192.168.1.10,dst=93.184.216.34,ttl=64,proto=TCP}|TCP{sport=51514,dport=80,seq=1001,ack=2001,flags=PSH-ACK}|APP{proto=HTTP,data=GET_/index.html}
+ETH{src=AA:BB:CC:DD:EE:02,dst=FF:EE:DD:CC:BB:02,type=IPv4|IP{src=192.168.1.10,dst=93.184.216.34,ttl=64,proto=TCP}|TCP{sport=51515,dport=80,seq=1002,ack=2002,flags=ACK}|APP{proto=HTTP,data=GET_/images/logo.png}
+ETH{src=AA:BB:CC:DD:EE:03,dst=FF:EE:DD:CC:BB:03,type=IPv4}|IP{src=192.168.1.11,dst=142.250.184.14,ttl=63,proto=TCP}|XYZ{campo=1}|APP{proto=TLS,data=CLIENT_HELLO}
+ETH{src=AA:BB:CC:DD:EE:04,dst=FF:EE:DD:CC:BB:04,type=IPv4}|IP{src=192.168.1.11,dst=142.250.184.14,ttl=63,proto=TCP}
+ETH{src=AA:BB:CC:DD:EE:05,dst=FF:EE:DD:CC:BB:05,type=IPv4}|IP{src=999.1.1.1,dst=8.8.8.8,ttl=128,proto=UDP}|UDP{sport=53000,dport=53,length=36}|APP{proto=DNS,data=QUERY_openai.com}
+ETH{src=AA:BB:CC:DD:EE:06,dst=FF:EE:DD:CC:BB:06,type=IPv4}|IP{src=8.8.8.8,dst=192.168.1.12,ttl=abc,proto=UDP}|UDP{sport=53,dport=53000,length=52}|APP{proto=DNS,data=RESPONSE_openai.com_104.18.33.45}
+ETH{src=AA:BB:CC:DD:EE:07,dst=FF:EE:DD:CC:BB:07,type=IPv4}|IP{src=192.168.1.18,dst=203.0.113.10,ttl=64,proto=TCP}|TCP{sport=52000,seq=1200,ack=2200,flags=SYN}|APP{proto=SSH,data=CLIENT_VERSION_SSH-2.0}
+ETH{src=AA:BB:CC:DD:EE:08,dst=FF:EE:DD:CC:BB:08,type=IPv4}|IP{src=192.168.1.12,dst=8.8.8.8,ttl=128,proto=TCP}|UDP{sport=53000,dport=53,length=36}|APP{proto=DNS,data=QUERY_openai.com}
+ETH{src=AA:BB:CC:DD:EE:09,dst=FF:EE:DD:CC:BB:09,type=IPv4}|IP{src=192.168.1.14,dst=1.1.1.1,ttl=64,ttl=32,proto=ICMP}|ICMP{type=8,code=0,id=1200,seq=1}|APP{proto=PING,data=ECHO_REQUEST}
+ETH{src=AA:BB:CC:DD:EE:0A,dst=FF:EE:DD:CC:BB:0A,type=IPv4}|IP{src=1.1.1.1,dst=192.168.1.14,ttl=56,proto=ICMP}|IP{src=1.1.1.1,dst=192.168.1.14,ttl=56,proto=ICMP}|APP{proto=PING,data=ECHO_REPLY}
+ETH{src=AA:BB:CC:DD:EE:0B,dst=FF:EE:DD:CC:BB:0B,type=IPv4}|IP{src=192.168.1.26,dst=1.1.1.1,ttl=64,proto=ICMP}|ICMP{type=8,code=0,id=2200,seq=1}
+  ETH{ src = AA:BB:CC:DD:EE:0C , dst = FF:EE:DD:CC:BB:0C , type = IPv4 } | IP{src=192.168.1.17,dst=129.6.15.28,ttl=64,proto=UDP} | UDP{sport=54000,dport=123,length=32} | APP{proto=NTP,data=TIME_REQUEST}  
+
+eth{src=AA:BB:CC:DD:EE:0D,dst=FF:EE:DD:CC:BB:0D,type=ipv4}|ip{src=192.168.1.24,dst=93.184.216.34,ttl=64,proto=tcp}|tcp{sport=53010,dport=80,seq=1700,ack=2700,flags=syn}|app{proto=HTTP,data=CONNECT}
+ETH{src=AA:BB:CC:DD:EE:0E,dst=FF:EE:DD:CC:BB:0E,type=ARP}|IP{src=192.168.1.24,dst=93.184.216.34,ttl=64,proto=TCP}|TCP{sport=53010,dport=80,seq=1701,ack=2701,flags=PSH-ACK}|APP{proto=HTTP,data=POST_/login}
+ETH{src=AA:BB:CC:DD:EE:0F,dst=FF:EE:DD:CC:BB:0F,type=IPv4}|IP{src=192.168.1.19,dst=198.51.100.25,ttl=64,proto=TCP}|TCP{sport=52010,dport=70000,seq=1300,ack=2300,flags=SYN}|APP{proto=FTP,data=CONNECT}
+ETH{src=AA:BB:CC:DD:EE:10,dst=FF:EE:DD:CC:BB:10,type=IPv4}|IP{src=192.168.1.20,dst=198.51.100.50,ttl=64,proto=TCP}|APP{proto=SMTP,data=CONNECT}|TCP{sport=52020,dport=25,seq=1400,ack=2400,flags=SYN}
+ETH{src=AA:BB:CC:DD:EE:11,dst=FF:EE:DD:CC:BB:11,type=IPv4}|IP{src=192.168.1.20,dst=198.51.100.50,ttl=64,proto=TCP}|TCP{sport=52020,dport=25,seq=1401,ack=2401,flags=SYN-XYZ}|APP{proto=SMTP,data=HELO_mail.local}
+ETH{src=AA:BB:CC:DD:EE:12,dst=FF:EE:DD:CC:BB:12,type=IPv4}|IP{src=192.168.1.11,dst=142.250.184.14,ttl=63,proto=TCP}|TCP{sport=51516,dport=443,seq=1011,ack=2011,flags=ACK}|APP{proto=HTTPS,data=GET_/search?q=redes}
+ETH{src=AA:BB:CC:DD:EE:13,dst=FF:EE:DD:CC:BB:13,type=IPv4}|IP{src=192.168.1.16,dst=8.8.4.4,ttl=120,proto=UDP}|UDP{sport=53001,dport=53,length=5}|APP{proto=DNS,data=QUERY_example.com}
+ETH{src=AA:BB:CC:DD:EE:14,dst=FF:EE:DD:CC:BB:14}|IP{src=192.168.1.16,dst=8.8.4.4,ttl=120,proto=UDP}|UDP{sport=53001,dport=53,length=34}|APP{proto=DNS,data=QUERY_example.com}
