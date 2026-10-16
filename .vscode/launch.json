@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "analizador.app.Main",
+            "projectName": "APE2_IntroRedes_Analizador_de_tr-fico_de_red_basado_en_el_modelo_TCP-IP_ecfd63c1"
+        },
+        {
+            "type": "java",
             "name": "main",
             "request": "launch",
             "mainClass": "analizador.app.main",
