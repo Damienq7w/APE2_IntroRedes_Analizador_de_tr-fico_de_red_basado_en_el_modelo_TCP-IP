@@ -7,8 +7,7 @@ import java.nio.file.Paths;
  * Clase principal: solo arranca el programa. Toda la logica esta repartida en los
  * demas paquetes (lectura, analisis, estadistica, consulta y reporte).
  *
- * Uso: analizador.app.Principal [ruta del archivo de paquetes]
- * Sin argumento busca recursos/paquetes.txt, tanto si se ejecuta desde la carpeta
+ * Uso: analizador.app.Main recursos/paquetes.txt, tanto si se ejecuta desde la carpeta
  * APE2_Analizador como desde la raiz del repositorio (lo habitual en VS Code).
  */
 public class Main {

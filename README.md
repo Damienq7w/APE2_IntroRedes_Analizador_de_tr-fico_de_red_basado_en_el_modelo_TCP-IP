@@ -21,15 +21,16 @@ Proyecto desarrollado para la práctica **APE2** de la asignatura **Introducció
 5. [Requisitos](#requisitos)
 6. [Instalación y ejecución](#instalación-y-ejecución)
 7. [Uso](#uso)
-8. [Formato del archivo de entrada](#formato-del-archivo-de-entrada)
-9. [Arquitectura](#arquitectura)
-10. [Relación con el modelo TCP/IP](#relación-con-el-modelo-tcpip)
-11. [Validación y manejo de errores](#validación-y-manejo-de-errores)
-12. [Resultados con el dataset](#resultados-con-el-dataset)
-13. [Decisiones de diseño](#decisiones-de-diseño)
-14. [Cumplimiento de la guía](#cumplimiento-de-la-guía)
-15. [Limitaciones](#limitaciones)
-16. [Referencias](#referencias)
+8. [Capturas de ejecución](#capturas-de-ejecución)
+9. [Formato del archivo de entrada](#formato-del-archivo-de-entrada)
+10. [Arquitectura](#arquitectura)
+11. [Relación con el modelo TCP/IP](#relación-con-el-modelo-tcpip)
+12. [Validación y manejo de errores](#validación-y-manejo-de-errores)
+13. [Resultados con el dataset](#resultados-con-el-dataset)
+14. [Decisiones de diseño](#decisiones-de-diseño)
+15. [Cumplimiento de la guía](#cumplimiento-de-la-guía)
+16. [Limitaciones](#limitaciones)
+17. [Referencias](#referencias)
 
 ---
 
@@ -126,54 +127,17 @@ Para probar el manejo de errores: `java -cp bin analizador.app.Main recursos/paq
 
 ## Uso
 
-Al iniciar, el programa analiza el archivo y muestra un resumen de la carga:
+Al iniciar, el programa analiza el archivo, muestra un resumen de la carga y presenta el menú:
 
-```
-Archivo analizado ....: recursos/paquetes.txt
-Lineas leidas ........: 174
-Paquetes validos .....: 160
-Lineas vacias ........: 14
-Lineas con error .....: 0
-```
+<p align="center">
+  <img src="docs/capturas/Figura2.png" alt="Carga inicial del archivo y menú principal" width="520">
+</p>
 
-A continuación presenta el menú:
+Ejemplo de salida de un paquete TCP desglosado por capas (opción 2, paquete 1):
 
-```
- 1. Mostrar todos los paquetes por capas
- 2. Ver un paquete por numero
- 3. Resumen estadistico
- 4. Buscar paquetes por IP (origen o destino)
- 5. Filtrar por protocolo de transporte (TCP/UDP/ICMP)
- 6. Filtrar por protocolo de aplicacion
- 7. Ver lineas con error
- 8. Exportar reporte a archivo
- 0. Salir
-```
-
-Ejemplo de salida de un paquete (opción 2):
-
-```
-================ PAQUETE #1 (linea 1) ================
-[CAPA DE ACCESO A RED] Ethernet
-   MAC origen .........: AA:BB:CC:DD:EE:01
-   MAC destino ........: FF:EE:DD:CC:BB:01
-   Tipo de trama ......: IPv4
-[CAPA DE INTERNET] IP
-   IP origen ..........: 192.168.1.10
-   IP destino .........: 93.184.216.34
-   TTL ................: 64
-   Protocolo ..........: TCP
-[CAPA DE TRANSPORTE] TCP
-   Tipo de protocolo ..: TCP
-   Puerto origen ......: 51514
-   Puerto destino .....: 80 (HTTP)
-   Secuencia ..........: 1001
-   ACK ................: 2001
-   Flags ..............: PSH-ACK
-[CAPA DE APLICACION] HTTP
-   Protocolo ..........: HTTP
-   Datos ..............: GET_/index.html
-```
+<p align="center">
+  <img src="docs/capturas/Figura3.png" alt="Paquete TCP desglosado por capas" width="480">
+</p>
 
 > El **número de paquete** no siempre coincide con el **número de línea**: las líneas vacías del
 > archivo son separadores y no cuentan como paquetes. Por ejemplo, el paquete #160 está en la línea 174.
@@ -183,6 +147,46 @@ Ejemplo de salida de un paquete (opción 2):
 La opción 8 exporta el análisis completo (todos los paquetes, el resumen estadístico y las líneas con
 error) en la carpeta **`APE2_Analizador/reportes/`**, que se crea automáticamente. El nombre por defecto
 es `reporte_analisis.txt`.
+
+## Capturas de ejecución
+
+Capturas tomadas en Visual Studio Code. Están en [`docs/capturas/`](docs/capturas/) con la misma numeración de figuras del informe.
+
+| Figura | Qué muestra |
+|---|---|
+| [Figura 1](docs/capturas/Figura1.png) | Estructura del proyecto en Visual Studio Code |
+| [Figura 2](docs/capturas/Figura2.png) | Carga inicial de `paquetes.txt` y menú principal |
+| [Figura 3](docs/capturas/Figura3.png) | Paquete TCP desglosado por capas (paquete 1) |
+| [Figura 4](docs/capturas/Figura4.png) | Paquete UDP desglosado por capas (paquete 5, DNS) |
+| [Figura 5](docs/capturas/Figura5.png) | Paquete ICMP desglosado por capas (paquete 9) |
+| [Figura 6](docs/capturas/Figura6.png) | Resumen estadístico |
+| [Figura 7](docs/capturas/Figura7.png) | Filtro de paquetes por protocolo de transporte |
+| [Figura 8](docs/capturas/Figura8.png) | Carga del archivo de prueba con líneas mal formadas |
+| [Figura 9](docs/capturas/Figura9.png) | Listado de líneas con error (sintácticas y semánticas) |
+| [Figura 10](docs/capturas/Figura10.png) | Validación de una entrada inválida en el menú |
+| [Figura 11](docs/capturas/Figura11.png) | Reporte exportado en la carpeta `reportes` |
+
+### Paquete ICMP
+
+ICMP no usa puertos: el programa lo indica y lo ubica como protocolo de control de la capa de Internet.
+
+<p align="center">
+  <img src="docs/capturas/Figura5.png" alt="Paquete ICMP desglosado por capas" width="600">
+</p>
+
+### Resumen estadístico
+
+<p align="center">
+  <img src="docs/capturas/Figura6.png" alt="Resumen estadístico generado por el programa" width="460">
+</p>
+
+### Manejo de líneas mal formadas
+
+Con `paquetes_prueba.txt` el programa reporta las 15 líneas con error, su tipo y el motivo, y continúa funcionando.
+
+<p align="center">
+  <img src="docs/capturas/Figura9.png" alt="Listado de líneas con error" width="760">
+</p>
 
 ## Formato del archivo de entrada
 
@@ -221,6 +225,8 @@ ETH{src=<MAC>,dst=<MAC>,type=IPv4}|IP{src=<IP>,dst=<IP>,ttl=<n>,proto=<TCP|UDP|I
 │   │   └── paquetes_prueba.txt    lineas validas y mal formadas para pruebas
 │   ├── reportes/                  reportes exportados (opcion 8)
 │   └── src/analizador/            codigo fuente (26 clases, 9 paquetes)
+├── docs/
+│   └── capturas/                  capturas de ejecucion (Figuras 1 a 11)
 ├── .gitignore
 └── README.md
 ```
